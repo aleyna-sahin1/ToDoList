@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="test">Test</string>
+    <string name="to_do_list">To Do List</string>
+    <string name="enter_your_task">Enter your task</string>
+    <string name="add">+</string>
+    <string name="AllClear">AC</string>
+</resources>
