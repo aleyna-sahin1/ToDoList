@@ -94,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
             sqLiteStatement.bindString(1, task);
             sqLiteStatement.execute();
 
+            toDoListArrayList.clear();
+            getData();
+
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
