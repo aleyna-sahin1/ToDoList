@@ -104,6 +104,9 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Task added to your list!", Toast.LENGTH_LONG).show();
 
+        binding.editText.setText("");
+
+
     }
 
     @SuppressLint("NotifyDataSetChanged")
