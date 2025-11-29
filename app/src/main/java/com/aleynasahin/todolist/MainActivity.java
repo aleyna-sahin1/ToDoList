@@ -97,6 +97,11 @@ public class MainActivity extends AppCompatActivity {
             toDoListArrayList.clear();
             getData();
 
+            
+            if (binding.editText.getText().toString().isEmpty()) {
+                binding.editText.setError("Please enter a task");
+                return;
+            }
 
         } catch (Exception e) {
             throw new RuntimeException(e);
