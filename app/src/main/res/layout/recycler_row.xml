@@ -7,6 +7,14 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp">
 
+    <CheckBox
+        android:id="@+id/recyclerViewCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </CheckBox>
+
     <TextView
         android:id="@+id/recyclerViewTextView"
         android:layout_width="match_parent"
