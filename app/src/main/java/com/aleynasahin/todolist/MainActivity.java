@@ -83,9 +83,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void add(View view) {
+        String task = binding.editText.getText().toString();
 
+        if (task.isEmpty()) {
+            binding.editText.setError("Please enter a task");
+            return;
+        }
         try {
-            String task = binding.editText.getText().toString();
 
             SQLiteDatabase database = this.openOrCreateDatabase("ToDoList", MODE_PRIVATE, null);
             database.execSQL("CREATE TABLE IF NOT EXISTS todolist (id INTEGER PRIMARY KEY,task VARCHAR)");
