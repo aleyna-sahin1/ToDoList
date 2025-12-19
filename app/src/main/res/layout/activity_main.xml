@@ -36,13 +36,14 @@
         android:inputType="text"
         android:textColor="@color/dusty_mauve"
         android:textSize="20sp"
+        android:background="@drawable/bg_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnAdd"
         android:layout_width="76dp"
         android:layout_height="48dp"
@@ -50,12 +51,13 @@
         android:fontFamily="@font/adlam_display"
         android:onClick="add"
         android:text="@string/add"
-        android:backgroundTint="@color/dusty_mauve"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnClear"
         android:layout_width="76dp"
         android:layout_height="48dp"
@@ -64,7 +66,8 @@
         android:includeFontPadding="false"
         android:onClick="clear"
         android:text="@string/AllClear"
-        android:backgroundTint="@color/dusty_mauve"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.979"
         app:layout_constraintStart_toStartOf="parent"
